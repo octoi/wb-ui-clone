@@ -1,4 +1,5 @@
 import 'package:app/utils/constants.dart';
+import 'package:app/widgets/bottom_icon_btn.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +27,40 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {},
               icon: const Icon(Icons.edit_outlined),
               color: appBlue,
+            ),
+          ],
+        ),
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: const [],
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        color: appDarkGrey,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: const [
+            BottomIconButton(
+              icon: CupertinoIcons.circle,
+              label: 'Status',
+            ),
+            BottomIconButton(
+              icon: CupertinoIcons.phone,
+              label: 'Calls',
+            ),
+            BottomIconButton(
+              icon: CupertinoIcons.camera,
+              label: 'Camera',
+            ),
+            BottomIconButton(
+              icon: CupertinoIcons.chat_bubble_2_fill,
+              label: 'Chats',
+              isSelected: true,
+            ),
+            BottomIconButton(
+              icon: CupertinoIcons.settings,
+              label: 'Settings',
             ),
           ],
         ),
