@@ -10,7 +10,7 @@ class Header extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Padding(
-          padding: EdgeInsets.all(15.0),
+          padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 5.0),
           child: Text(
             'Chats',
             style: TextStyle(
@@ -21,7 +21,7 @@ class Header extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 15.0),
+          padding: const EdgeInsets.symmetric(horizontal: 5.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [
