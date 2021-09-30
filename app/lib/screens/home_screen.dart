@@ -1,5 +1,6 @@
 import 'package:app/utils/constants.dart';
 import 'package:app/widgets/bottom_icon_btn.dart';
+import 'package:app/widgets/chat_list.dart';
 import 'package:app/widgets/header.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -39,6 +40,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: const [
             Header(),
+            ChatList(),
           ],
         ),
       ),
