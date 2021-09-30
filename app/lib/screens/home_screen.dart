@@ -1,5 +1,6 @@
 import 'package:app/utils/constants.dart';
 import 'package:app/widgets/bottom_icon_btn.dart';
+import 'package:app/widgets/header.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -21,19 +22,23 @@ class HomeScreen extends StatelessWidget {
               style: TextStyle(
                 color: appBlue,
                 fontWeight: FontWeight.normal,
+                fontSize: 18.0,
               ),
             ),
             IconButton(
               onPressed: () {},
               icon: const Icon(Icons.edit_outlined),
               color: appBlue,
+              iconSize: 20.0,
             ),
           ],
         ),
       ),
       body: SingleChildScrollView(
         child: Column(
-          children: const [],
+          children: const [
+            Header(),
+          ],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
