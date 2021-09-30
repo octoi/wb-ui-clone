@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
             ),
             IconButton(
               onPressed: () {},
-              icon: const Icon(CupertinoIcons.pen),
+              icon: const Icon(Icons.edit_outlined),
               color: appBlue,
             ),
           ],
